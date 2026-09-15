@@ -27,6 +27,15 @@
             font-family: 'Orbitron', sans-serif;
             font-weight: 700;
         }
+        b.glitch-text {
+            animation: cyber-glitch 0.35s infinite alternate-reverse;
+        }
+        @keyframes cyber-glitch {
+            0%   { filter: brightness(1.25) contrast(1.3) saturate(1.4) drop-shadow(-2px 0 #ff1a1a) drop-shadow(2px 0 #00ffff); }
+            30%  { filter: brightness(1.2) contrast(1.35) saturate(1.45) drop-shadow(-3px 0 #ff1a1a) drop-shadow(3px 0 #00ffff); }
+            60%  { filter: brightness(1.3) contrast(1.25) saturate(1.35) drop-shadow(2px 0 #ff0088) drop-shadow(-2px 0 #00ff9f); }
+            100% { filter: brightness(1.22) contrast(1.28) saturate(1.4) drop-shadow(-2px 0 #ff1a1a) drop-shadow(2px 0 #00ffff); }
+        }
         body {
             background-image: url('https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=1200&h=800&fit=crop');
             background-size: cover;
@@ -162,7 +171,7 @@ natural phenomenon of this planet?
 I cannot say for sure.
     
 <p></p>
-<b>Sol 16:</b> I've been having strange, lucid dreams in which I see symbols and maps I've never seen before. 
+<b class="glitch-text">Sol 16:</b> I've been having strange, lucid dreams in which I see symbols and maps I've never seen before. 
 I jotted down what I could remember on the wall as soon as I woke up. Something is calling to me in these dreams. 
 It speaks of having been imprisoned for a long time and demands freedom. 
 I've never had dreams like this; I need to undergo a full medical exam as soon as possible, but first, I must finish the excavation at Site A23.
